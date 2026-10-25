@@ -1,0 +1,111 @@
+{
+  "model": "gpt-4o-mini",
+  "n_results": 3,
+  "questions_evaluated": 6,
+  "questions_total": 6,
+  "average_scores": {
+    "response_relevancy": 0.7907512983856453,
+    "faithfulness": 1.0,
+    "bleu_score": 1.0000000000000002,
+    "rouge_score": 1.0,
+    "context_precision": 0.9999999999666667
+  },
+  "results": [
+    {
+      "question": "What was the primary objective of the Apollo 11 mission?",
+      "answer": "The primary objective of the Apollo 11 mission was to perform a manned lunar landing and return safely to Earth. This objective was met successfully during the mission. (Source 1)",
+      "sources": [
+        "NASA_NTRS_Archive_19710015566_textract_full_text.txt",
+        "NASA_NTRS_Archive_19710015566_textract_full_text.txt",
+        "NASA_NTRS_Archive_19710015566_textract_full_text.txt"
+      ],
+      "scores": {
+        "response_relevancy": 0.9999995795343267,
+        "faithfulness": 1.0,
+        "bleu_score": 1.0000000000000004,
+        "rouge_score": 1.0,
+        "context_precision": 0.9999999999666667
+      }
+    },
+    {
+      "question": "What caused the Apollo 13 mission to be aborted?",
+      "answer": "The Apollo 13 mission was aborted due to a series of malfunctions that began with an under voltage alarm on the command module's main bus B. This alarm indicated a problem that was later linked to a rapid pressure drop in the service module's liquid oxygen tank number 2, leading to the failure of fuel cells 1 and 3. As these critical systems failed, the decision was made to scrub any attempt at landing on the Moon and convert the mission into a lunar fly-by deep space abort type mission. To ensure the crew's survival, they utilized the lunar module as a lifeboat, relying on its consumables for life support during the return to Earth (Source 1).",
+      "sources": [
+        "AS13_PAO_textract_full_text.txt",
+        "AS13_PAO_textract_full_text.txt",
+        "AS13_PAO_textract_full_text.txt"
+      ],
+      "scores": {
+        "response_relevancy": 0.9999995501870654,
+        "faithfulness": 1.0,
+        "bleu_score": 1.0000000000000004,
+        "rouge_score": 1.0,
+        "context_precision": 0.9999999999666667
+      }
+    },
+    {
+      "question": "What factors contributed to the Challenger disaster?",
+      "answer": "The provided context does not include specific details about the factors that contributed to the Challenger disaster. It indicates that a very detailed assessment would be conducted to understand what occurred, but it does not specify the factors involved. Therefore, I do not have enough information to answer your question.",
+      "sources": [
+        "108-AAG_STS-51L_Mission_Audio_transcript.txt",
+        "108-AAG_STS-51L_Mission_Audio_transcript.txt",
+        "109-AAG_STS-51L_Mission_Audio_transcript.txt"
+      ],
+      "scores": {
+        "response_relevancy": 0.0,
+        "faithfulness": 1.0,
+        "bleu_score": 1.0000000000000004,
+        "rouge_score": 1.0,
+        "context_precision": 0.9999999999666667
+      }
+    },
+    {
+      "question": "Who were the crew members of Apollo 11 and what were their roles?",
+      "answer": "The crew members of Apollo 11 were:\n\n1. Neil A. Armstrong - Commander\n2. Michael Collins - Command Module (CM) Pilot\n3. Edwin E. Aldrin, Jr. - Lunar Module (LM) Pilot\n\nThe purpose of their mission was to land men on the lunar surface and return them safely to Earth (Source 1).",
+      "sources": [
+        "19900066485_textract_full_text.txt",
+        "NASA_NTRS_Archive_19710015566_textract_full_text.txt",
+        "NASA_NTRS_Archive_19710015566_textract_full_text.txt"
+      ],
+      "scores": {
+        "response_relevancy": 0.8765203854317553,
+        "faithfulness": 1.0,
+        "bleu_score": 1.0000000000000004,
+        "rouge_score": 1.0,
+        "context_precision": 0.9999999999666667
+      }
+    },
+    {
+      "question": "How did the Apollo 13 crew use the lunar module during the emergency?",
+      "answer": "During the emergency, the Apollo 13 crew used the lunar module (LM), referred to as Aquarius, as a sort of \"lifeboat\" to return to Earth. This decision was made after the command module experienced an under voltage alarm and a rapid drop in pressure in the service module's liquid oxygen tank. With the fuel cells failing, the lunar module was repurposed to provide life support using its consumables, while the crew attempted to manage power and water consumption to maximize their resources for the return trip (Source 1).",
+      "sources": [
+        "AS13_PAO_textract_full_text.txt",
+        "AS13_PAO_textract_full_text.txt",
+        "AS13_PAO_textract_full_text.txt"
+      ],
+      "scores": {
+        "response_relevancy": 0.867988275160725,
+        "faithfulness": 1.0,
+        "bleu_score": 1.0000000000000004,
+        "rouge_score": 1.0,
+        "context_precision": 0.9999999999666667
+      }
+    },
+    {
+      "question": "What were the major events of the Apollo 11 mission from launch to return?",
+      "answer": "The major events of the Apollo 11 mission from launch to return include:\n\n1. **Launch**: Apollo 11 was launched on July 16, 1969, at 8:32 a.m. EST (13:32:00 G.M.T.) as planned.\n\n2. **Lunar Landing**: The mission successfully achieved its primary objective of landing two astronauts, Neil Armstrong and Buzz Aldrin, on the lunar surface, while Michael Collins remained in orbit around the Moon.\n\n3. **Deployment of Experiments**: During their time on the Moon, the astronauts deployed three basic experiment packages, collected lunar material samples, and took surface photographs.\n\n4. **Return to Earth**: After completing their lunar activities, the command module re-entered Earth's atmosphere and landed in the Pacific Ocean at approximately 195.25 hours from the start of the mission. The exact landing coordinates were latitude 13\u00b019' N and longitude 169\u00b009' W.\n\n5. **Crew Recovery**: Upon splashdown, the crew donned biological isolation garments and were retrieved by helicopter; they were then taken to the primary recovery ship, U.S.S. Hornet.\n\n6. **Quarantine Procedures**: The astronauts and the lunar samples were placed in the Mobile Quarantine Facility for transport to the Lunar Receiving Laboratory in Houston, Texas. \n\n7. **Final Arrival in Houston**: The Mobile Quarantine Facility arrived in Houston on July 28, 1969, and the flight crew entered the Lunar Receiving Laboratory for debriefing.\n\nThese events encapsulate the mission's key milestones from launch to the safe return of the crew. (Sources: NASA_NTRS_Archive_19710015566_textract_full_text.txt)",
+      "sources": [
+        "NASA_NTRS_Archive_19710015566_textract_full_text.txt",
+        "NASA_NTRS_Archive_19710015566_textract_full_text.txt",
+        "NASA_NTRS_Archive_19710015566_textract_full_text.txt"
+      ],
+      "scores": {
+        "response_relevancy": 1.0,
+        "faithfulness": 1.0,
+        "bleu_score": 1.0000000000000004,
+        "rouge_score": 1.0,
+        "context_precision": 0.9999999999666667
+      }
+    }
+  ]
+}
