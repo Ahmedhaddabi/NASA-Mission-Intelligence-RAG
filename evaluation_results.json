@@ -4,48 +4,51 @@
   "questions_evaluated": 6,
   "questions_total": 6,
   "average_scores": {
-    "response_relevancy": 0.7907512983856453,
-    "faithfulness": 1.0,
-    "bleu_score": 1.0000000000000002,
-    "rouge_score": 1.0,
-    "context_precision": 0.9999999999666667
+    "response_relevancy": 0.7828833674713108,
+    "faithfulness": 0.962121212121212,
+    "bleu_score": 0.11592177924774916,
+    "rouge_score": 0.3038148443956361,
+    "context_precision": 0.611111111075
   },
   "results": [
     {
       "question": "What was the primary objective of the Apollo 11 mission?",
-      "answer": "The primary objective of the Apollo 11 mission was to perform a manned lunar landing and return safely to Earth. This objective was met successfully during the mission. (Source 1)",
+      "reference": "The primary objective of Apollo 11 was to perform a crewed landing on the Moon and return the astronauts safely to Earth, fulfilling the national goal set by President Kennedy.",
+      "answer": "The primary objective of the Apollo 11 mission was to perform a manned lunar landing and return safely to Earth.",
       "sources": [
         "NASA_NTRS_Archive_19710015566_textract_full_text.txt",
         "NASA_NTRS_Archive_19710015566_textract_full_text.txt",
         "NASA_NTRS_Archive_19710015566_textract_full_text.txt"
       ],
       "scores": {
-        "response_relevancy": 0.9999995795343267,
+        "response_relevancy": 0.999999719689551,
         "faithfulness": 1.0,
-        "bleu_score": 1.0000000000000004,
-        "rouge_score": 1.0,
+        "bleu_score": 0.1981580370125018,
+        "rouge_score": 0.64,
         "context_precision": 0.9999999999666667
       }
     },
     {
       "question": "What caused the Apollo 13 mission to be aborted?",
-      "answer": "The Apollo 13 mission was aborted due to a series of malfunctions that began with an under voltage alarm on the command module's main bus B. This alarm indicated a problem that was later linked to a rapid pressure drop in the service module's liquid oxygen tank number 2, leading to the failure of fuel cells 1 and 3. As these critical systems failed, the decision was made to scrub any attempt at landing on the Moon and convert the mission into a lunar fly-by deep space abort type mission. To ensure the crew's survival, they utilized the lunar module as a lifeboat, relying on its consumables for life support during the return to Earth (Source 1).",
+      "reference": "Apollo 13 was aborted after oxygen tank number two in the service module exploded about 56 hours into the flight, caused by damaged wiring insulation inside the tank. The explosion caused a loss of oxygen and electrical power in the command and service module, so the planned Moon landing had to be cancelled.",
+      "answer": "The Apollo 13 mission was aborted due to an under voltage alarm on the command module main bus B, which was the first indication that something was wrong. This was followed by a rapid drop in pressure in the service module liquid oxygen tank number 2 and the failure of fuel cells 1 and 3. As a result, a decision was made to abandon the attempt at landing on the Moon and instead continue with a lunar fly-by deep space abort type mission. The crew utilized the lunar module as a \"lifeboat\" to return to Earth, using its consumables for life support.",
       "sources": [
         "AS13_PAO_textract_full_text.txt",
         "AS13_PAO_textract_full_text.txt",
         "AS13_PAO_textract_full_text.txt"
       ],
       "scores": {
-        "response_relevancy": 0.9999995501870654,
+        "response_relevancy": 0.9814544817575911,
         "faithfulness": 1.0,
-        "bleu_score": 1.0000000000000004,
-        "rouge_score": 1.0,
-        "context_precision": 0.9999999999666667
+        "bleu_score": 0.05186599369095728,
+        "rouge_score": 0.21794871794871795,
+        "context_precision": 0.9999999999
       }
     },
     {
       "question": "What factors contributed to the Challenger disaster?",
-      "answer": "The provided context does not include specific details about the factors that contributed to the Challenger disaster. It indicates that a very detailed assessment would be conducted to understand what occurred, but it does not specify the factors involved. Therefore, I do not have enough information to answer your question.",
+      "reference": "The Challenger disaster was caused by the failure of the O-ring seals in a joint of the right solid rocket booster. Unusually cold temperatures on launch day made the O-rings less flexible, allowing hot gas to escape and leading the vehicle to break apart 73 seconds after liftoff. Contributing factors were the flawed joint design and a NASA decision-making process that went ahead with the launch despite engineers' concerns about the cold.",
+      "answer": "The provided context does not contain sufficient information regarding the specific factors that contributed to the Challenger disaster. Therefore, I do not have enough information to answer your question.",
       "sources": [
         "108-AAG_STS-51L_Mission_Audio_transcript.txt",
         "108-AAG_STS-51L_Mission_Audio_transcript.txt",
@@ -54,57 +57,60 @@
       "scores": {
         "response_relevancy": 0.0,
         "faithfulness": 1.0,
-        "bleu_score": 1.0000000000000004,
-        "rouge_score": 1.0,
-        "context_precision": 0.9999999999666667
+        "bleu_score": 0.051420277882356424,
+        "rouge_score": 0.09615384615384616,
+        "context_precision": 0.0
       }
     },
     {
       "question": "Who were the crew members of Apollo 11 and what were their roles?",
-      "answer": "The crew members of Apollo 11 were:\n\n1. Neil A. Armstrong - Commander\n2. Michael Collins - Command Module (CM) Pilot\n3. Edwin E. Aldrin, Jr. - Lunar Module (LM) Pilot\n\nThe purpose of their mission was to land men on the lunar surface and return them safely to Earth (Source 1).",
+      "reference": "The Apollo 11 crew were Neil Armstrong, the Commander; Edwin \"Buzz\" Aldrin, the Lunar Module Pilot; and Michael Collins, the Command Module Pilot. Armstrong and Aldrin landed on the Moon in the lunar module Eagle, while Collins remained in lunar orbit in the command module Columbia.",
+      "answer": "The crew members of Apollo 11 were:\n\n- Neil A. Armstrong, Commander\n- Michael Collins, Command Module Pilot\n- Edwin E. Aldrin, Jr., Lunar Module Pilot",
       "sources": [
         "19900066485_textract_full_text.txt",
         "NASA_NTRS_Archive_19710015566_textract_full_text.txt",
         "NASA_NTRS_Archive_19710015566_textract_full_text.txt"
       ],
       "scores": {
-        "response_relevancy": 0.8765203854317553,
+        "response_relevancy": 0.9321422101753113,
         "faithfulness": 1.0,
-        "bleu_score": 1.0000000000000004,
-        "rouge_score": 1.0,
-        "context_precision": 0.9999999999666667
+        "bleu_score": 0.027627754546011168,
+        "rouge_score": 0.43478260869565216,
+        "context_precision": 0.8333333332916666
       }
     },
     {
       "question": "How did the Apollo 13 crew use the lunar module during the emergency?",
-      "answer": "During the emergency, the Apollo 13 crew used the lunar module (LM), referred to as Aquarius, as a sort of \"lifeboat\" to return to Earth. This decision was made after the command module experienced an under voltage alarm and a rapid drop in pressure in the service module's liquid oxygen tank. With the fuel cells failing, the lunar module was repurposed to provide life support using its consumables, while the crew attempted to manage power and water consumption to maximize their resources for the return trip (Source 1).",
+      "reference": "The crew used the lunar module Aquarius as a lifeboat. They moved into it and relied on its oxygen, power and water to survive, and used its descent engine for course corrections to return to Earth. Shortly before re-entry they returned to the command module Odyssey and jettisoned the lunar module.",
+      "answer": "During the emergency, the Apollo 13 crew used the lunar module as a \"lifeboat\" to return to Earth. After an under voltage alarm was reported on the command module and other critical failures occurred, including the dropping pressure in the service module's liquid oxygen tank and the failure of two fuel cells, it was decided to scrub the planned lunar landing. Instead, the lunar module was utilized for life support, using its consumables to ensure the crew's survival while they continued on a lunar fly-by deep space abort mission. The crew worked to manage the power and water profile to maximize the use of these resources.",
       "sources": [
         "AS13_PAO_textract_full_text.txt",
         "AS13_PAO_textract_full_text.txt",
         "AS13_PAO_textract_full_text.txt"
       ],
       "scores": {
-        "response_relevancy": 0.867988275160725,
+        "response_relevancy": 0.7837042681540481,
         "faithfulness": 1.0,
-        "bleu_score": 1.0000000000000004,
-        "rouge_score": 1.0,
-        "context_precision": 0.9999999999666667
+        "bleu_score": 0.32885804549558306,
+        "rouge_score": 0.2608695652173913,
+        "context_precision": 0.8333333332916666
       }
     },
     {
       "question": "What were the major events of the Apollo 11 mission from launch to return?",
-      "answer": "The major events of the Apollo 11 mission from launch to return include:\n\n1. **Launch**: Apollo 11 was launched on July 16, 1969, at 8:32 a.m. EST (13:32:00 G.M.T.) as planned.\n\n2. **Lunar Landing**: The mission successfully achieved its primary objective of landing two astronauts, Neil Armstrong and Buzz Aldrin, on the lunar surface, while Michael Collins remained in orbit around the Moon.\n\n3. **Deployment of Experiments**: During their time on the Moon, the astronauts deployed three basic experiment packages, collected lunar material samples, and took surface photographs.\n\n4. **Return to Earth**: After completing their lunar activities, the command module re-entered Earth's atmosphere and landed in the Pacific Ocean at approximately 195.25 hours from the start of the mission. The exact landing coordinates were latitude 13\u00b019' N and longitude 169\u00b009' W.\n\n5. **Crew Recovery**: Upon splashdown, the crew donned biological isolation garments and were retrieved by helicopter; they were then taken to the primary recovery ship, U.S.S. Hornet.\n\n6. **Quarantine Procedures**: The astronauts and the lunar samples were placed in the Mobile Quarantine Facility for transport to the Lunar Receiving Laboratory in Houston, Texas. \n\n7. **Final Arrival in Houston**: The Mobile Quarantine Facility arrived in Houston on July 28, 1969, and the flight crew entered the Lunar Receiving Laboratory for debriefing.\n\nThese events encapsulate the mission's key milestones from launch to the safe return of the crew. (Sources: NASA_NTRS_Archive_19710015566_textract_full_text.txt)",
+      "reference": "Apollo 11 launched on a Saturn V rocket from Kennedy Space Center on July 16, 1969, and entered lunar orbit on July 19. On July 20, Armstrong and Aldrin landed the lunar module Eagle in the Sea of Tranquility and spent about two and a half hours walking on the surface, collecting samples and setting up experiments. They then lifted off, docked with Collins in Columbia, and the crew returned to Earth, splashing down in the Pacific Ocean on July 24, 1969.",
+      "answer": "The major events of the Apollo 11 mission from launch to return are as follows:\n\n1. **Launch**: Apollo 11 was launched on July 16, 1969, at 8:32 a.m. EST.\n\n2. **Lunar Landing**: The mission accomplished its primary objective by landing two men, astronauts Neil Armstrong and Edwin \"Buzz\" Aldrin, on the lunar surface.\n\n3. **Deployment of Experiments**: Three basic experiment packages were deployed on the lunar surface, which were part of the early Apollo scientific experiment package.\n\n4. **Collection of Samples**: The astronauts collected lunar material samples and took surface photographs.\n\n5. **Lunar Module Ascent**: After spending time on the moon, the lunar module returned to the command module to reunite with astronaut Michael Collins.\n\n6. **Return Journey**: The spacecraft then began its journey back to Earth.\n\n7. **Command Module Reentry**: The command module reentered Earth's atmosphere.\n\n8. **Splashdown**: The command module landed in the Pacific Ocean at approximately 195.25 hours ground elapsed time (g.e.t.) after launch.\n\n9. **Crew Recovery**: The crew was retrieved by helicopter and taken to the recovery ship, U.S.S. Hornet.\n\n10. **Quarantine Procedures**: The crew and lunar samples were placed in the Mobile Quarantine Facility for transport to the Lunar Receiving Laboratory in Houston, Texas.\n\n11. **Completion of Quarantine**: Various quarantine and decontamination events took place, concluding with the offloading of the Mobile Quarantine Facility and arrival at Houston.\n\nThese events encapsulate the primary milestones of the Apollo 11 mission from launch to the safe return of the astronauts to Earth.",
       "sources": [
         "NASA_NTRS_Archive_19710015566_textract_full_text.txt",
         "NASA_NTRS_Archive_19710015566_textract_full_text.txt",
         "NASA_NTRS_Archive_19710015566_textract_full_text.txt"
       ],
       "scores": {
-        "response_relevancy": 1.0,
-        "faithfulness": 1.0,
-        "bleu_score": 1.0000000000000004,
-        "rouge_score": 1.0,
-        "context_precision": 0.9999999999666667
+        "response_relevancy": 0.9999995250513639,
+        "faithfulness": 0.7727272727272727,
+        "bleu_score": 0.03760056685908524,
+        "rouge_score": 0.17313432835820897,
+        "context_precision": 0.0
       }
     }
   ]

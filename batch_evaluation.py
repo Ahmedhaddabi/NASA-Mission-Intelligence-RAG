@@ -14,7 +14,7 @@ Loads questions from evaluation_dataset.txt and runs each question through:
 import json
 import os
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 from dotenv import load_dotenv
 
@@ -51,8 +51,18 @@ RESULTS_FILE = "evaluation_results.json"
 # Load evaluation questions
 # ------------------------------------------------------------
 
-def load_questions(file_path: str) -> List[str]:
-    """Load evaluation questions from a text file."""
+def load_questions(file_path: str) -> List[Dict[str, Optional[str]]]:
+    """
+    Load evaluation questions from a text file.
+
+    One item per line, in either form:
+        question
+        question | reference answer
+
+    Blank lines and lines starting with # are ignored. The reference
+    answer is the ground truth used for BLEU, ROUGE and context
+    precision; questions without one get only the core metrics.
+    """
 
     path = Path(file_path)
 
@@ -61,21 +71,33 @@ def load_questions(file_path: str) -> List[str]:
             f"Evaluation dataset not found: {file_path}"
         )
 
-    questions = [
-        line.strip()
-        for line in path.read_text(
-            encoding="utf-8"
-        ).splitlines()
-        if line.strip()
-        and not line.strip().startswith("#")
-    ]
+    items: List[Dict[str, Optional[str]]] = []
 
-    if not questions:
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+
+        if not line or line.startswith("#"):
+            continue
+
+        question, _, reference = line.partition("|")
+
+        question = question.strip()
+        reference = reference.strip() or None
+
+        if question:
+            items.append(
+                {
+                    "question": question,
+                    "reference": reference,
+                }
+            )
+
+    if not items:
         raise ValueError(
             "Evaluation dataset contains no questions."
         )
 
-    return questions
+    return items
 
 
 # ------------------------------------------------------------
@@ -85,7 +107,8 @@ def load_questions(file_path: str) -> List[str]:
 def evaluate_question(
     collection,
     question: str,
-    openai_key: str
+    openai_key: str,
+    reference: Optional[str] = None
 ) -> Dict:
     """Run one question through the complete RAG pipeline."""
 
@@ -169,7 +192,8 @@ def evaluate_question(
         ragas_evaluator.evaluate_response_quality(
             question=question,
             answer=answer,
-            contexts=documents
+            contexts=documents,
+            reference=reference
         )
     )
 
@@ -180,8 +204,12 @@ def evaluate_question(
             "error": f"Evaluation failed: {scores['error']}"
         }
 
-    return {
+    # Keep per-metric failures separate so only numbers are averaged
+    metric_errors = scores.pop("metric_errors", None)
+
+    result = {
         "question": question,
+        "reference": reference,
         "answer": answer,
         "sources": [
             (metadata or {}).get(
@@ -192,6 +220,11 @@ def evaluate_question(
         ],
         "scores": scores
     }
+
+    if metric_errors:
+        result["metric_errors"] = metric_errors
+
+    return result
 
 
 # ------------------------------------------------------------
@@ -292,14 +325,18 @@ def main() -> None:
 
     results: List[Dict] = []
 
-    for number, question in enumerate(
+    for number, item in enumerate(
         questions,
         start=1
     ):
 
+        question = item["question"]
+        reference = item["reference"]
+
         print(
             f"[{number}/{len(questions)}] "
             f"{question}"
+            + ("" if reference else "  (no reference: core metrics only)")
         )
 
         # One failing question should
@@ -309,7 +346,8 @@ def main() -> None:
             result = evaluate_question(
                 collection,
                 question,
-                openai_key
+                openai_key,
+                reference
             )
 
         except Exception as exc:
@@ -352,6 +390,13 @@ def main() -> None:
                         f"    {metric}: "
                         f"{value}"
                     )
+
+            for metric, message in (
+                result.get("metric_errors", {}).items()
+            ):
+                print(
+                    f"    {metric}: skipped ({message[:80]})"
+                )
 
             print()
 

@@ -1,11 +1,6 @@
-What was the primary objective of the Apollo 11 mission?
-
-What caused the Apollo 13 mission to be aborted?
-
-What factors contributed to the Challenger disaster?
-
-Who were the crew members of Apollo 11 and what were their roles?
-
-How did the Apollo 13 crew use the lunar module during the emergency?
-
-What were the major events of the Apollo 11 mission from launch to return?
+What was the primary objective of the Apollo 11 mission? | The primary objective of Apollo 11 was to perform a crewed landing on the Moon and return the astronauts safely to Earth, fulfilling the national goal set by President Kennedy.
+What caused the Apollo 13 mission to be aborted? | Apollo 13 was aborted after oxygen tank number two in the service module exploded about 56 hours into the flight, caused by damaged wiring insulation inside the tank. The explosion caused a loss of oxygen and electrical power in the command and service module, so the planned Moon landing had to be cancelled.
+What factors contributed to the Challenger disaster? | The Challenger disaster was caused by the failure of the O-ring seals in a joint of the right solid rocket booster. Unusually cold temperatures on launch day made the O-rings less flexible, allowing hot gas to escape and leading the vehicle to break apart 73 seconds after liftoff. Contributing factors were the flawed joint design and a NASA decision-making process that went ahead with the launch despite engineers' concerns about the cold.
+Who were the crew members of Apollo 11 and what were their roles? | The Apollo 11 crew were Neil Armstrong, the Commander; Edwin "Buzz" Aldrin, the Lunar Module Pilot; and Michael Collins, the Command Module Pilot. Armstrong and Aldrin landed on the Moon in the lunar module Eagle, while Collins remained in lunar orbit in the command module Columbia.
+How did the Apollo 13 crew use the lunar module during the emergency? | The crew used the lunar module Aquarius as a lifeboat. They moved into it and relied on its oxygen, power and water to survive, and used its descent engine for course corrections to return to Earth. Shortly before re-entry they returned to the command module Odyssey and jettisoned the lunar module.
+What were the major events of the Apollo 11 mission from launch to return? | Apollo 11 launched on a Saturn V rocket from Kennedy Space Center on July 16, 1969, and entered lunar orbit on July 19. On July 20, Armstrong and Aldrin landed the lunar module Eagle in the Sea of Tranquility and spent about two and a half hours walking on the surface, collecting samples and setting up experiments. They then lifted off, docked with Collins in Columbia, and the crew returned to Earth, splashing down in the Pacific Ocean on July 24, 1969.
